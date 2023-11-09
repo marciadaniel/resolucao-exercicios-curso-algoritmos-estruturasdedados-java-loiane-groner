@@ -1,12 +1,13 @@
-package pilhas.exer03;
+package pilhas;
 
 import java.util.Scanner;
 import com.loiane.estruturadados.pilha.Pilha;
+
 import java.util.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-public class Teste {
+public class Exer03 {
 
 	public static void main(String[] args) {
 
