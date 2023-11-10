@@ -9,8 +9,9 @@ public class Exer07 {
 		
 		Scanner scan = new Scanner(System.in);
 		Stack<Integer> stack = new Stack<Integer>();
-		int number, quociente, resto;
+		int number = 0, resto;
 		String binario = "";
+		boolean valido = true;
 		
 		do {
 			System.out.println("Insira um número decimal no intervalo de 0 - 255");
@@ -19,13 +20,14 @@ public class Exer07 {
 					number = scan.nextInt();
 				} catch (Exception e) {
 					System.out.println("Valor inválido");
-					
-				}
+					valido = false;
+				} 
 			
 			
 		} while(number < 0 || number > 255);
 		
 		
+		if(valido) {
 		
 		if(number == 0) {
 			binario += "00";
@@ -51,8 +53,11 @@ public class Exer07 {
 			}
 		}
 		
+		
+		
 		System.out.println( "\nBinário:"+binario);
 		
+		}
 		
 	}
 
